@@ -1,6 +1,11 @@
-body, h1, ul, li, a, h2 {
+body{
 	font-family:arial;
-	
+	background: #eee;
+}
+
+.bungkus{
+	background: #fff;
+	padding: 0 !important;
 }
 
 a {
@@ -13,14 +18,26 @@ a {
 
 .menu {	
 	background-color: #026aba;
+	overflow: hidden;
 }
 
+header h1{
+	float: left;
+	color: #fff;
+	margin:15px 0px  15px 15px;
+	font-size: 2.5em;
+}
 
-.kotak {
+nav{
+	float: right;
+	background: transparent;
+}
+
+.baris {
 	-webkit-box-shadow: 1px 1px 10px 1px #8F8F8F;
 	box-shadow: 1px 1px 15px 1px #ADADAD;	
 	background-color: #fff;
-	border-radius: 5px;
+/*	border-radius: 5px;*/
 	
 }
 
@@ -31,6 +48,7 @@ a {
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 30px;	
+	line-height: 15px;
 }
 
 footer {
@@ -46,6 +64,7 @@ footer p {
 	padding-top: 30px;
 	padding-right: 30px;	
 	padding-left: 30px;
+	line-height: 20px;
 }
 
 footer li{	
@@ -92,3 +111,9 @@ nav ul li a:hover {
 background:#01366e;
 color: #fff;
 
+}
+
+.baris article:nth-of-type(3n+1){
+	clear: left;
+  margin-left: 0px;
+}
